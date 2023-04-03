@@ -6,6 +6,7 @@ import a2021153914.ex24.model.fsm.states.GroundFloorState;
 public class ElevatorContext {// nao pode haver nenhum set aqui, tem de ser feito via transições
     private IElevatorState currentstate;
     private Elevator elevator;//data
+    private int pa;
     public ElevatorContext(){
         elevator=new Elevator(0);
         currentstate= new GroundFloorState(this,elevator);
